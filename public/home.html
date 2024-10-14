@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>User Home Page</title>
+</head>
+<body>
+    <div class="home">
+        <h1>Welcome to Your Home Page!</h1>
+        <form action="/update" method="POST" id="update-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit">Update Details</button>
+        </form>
+        <a href="/logout">Logout</a> <!-- Link to logout -->
+    </div>
+    <script>
+        // Optional: Populate the form fields with the user's current details
+        document.addEventListener('DOMContentLoaded', () => {
+            // This could be replaced with an AJAX call to get user details if necessary
+            // For simplicity, we are just showing the form for now
+        });
+    </script>
+</body>
+</html>
